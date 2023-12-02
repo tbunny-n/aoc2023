@@ -1,5 +1,4 @@
 #![allow(dead_code, unused_imports)]
-#![allow(warnings)]
 use std::collections::HashMap;
 
 use crate::problems::get_input;
@@ -58,7 +57,7 @@ pub fn run() {
     println!("Sum: {}", sum);
 }
 
-const REPLACEMENT_PAIRS: [(&'static str, &'static str); 9] = [
+const REPLACEMENT_PAIRS: [(&str, &str); 9] = [
     ("one", "o1e"),
     ("two", "t2o"),
     ("three", "t3e"),
