@@ -1,8 +1,6 @@
-#![allow(dead_code, unused_imports)]
 use super::get_input;
-use std::collections::HashMap;
 
-const P1_TEST: &str = "two1nine
+const D1_TEST: &str = "two1nine
 eightwothree
 abcone2threexyz
 xtwone3four
@@ -11,8 +9,8 @@ zoneight234
 7pqrstsixteen";
 
 pub fn run() {
-    let input = get_input("p1");
-    // let input = P1_TEST;
+    let input = get_input("d1");
+    // let input = D1_TEST;
 
     // Split input by linebreaks
     let lines = input.lines();
@@ -69,11 +67,11 @@ const REPLACEMENT_PAIRS: [(&str, &str); 9] = [
 ];
 
 pub fn run2() {
-    let input = get_input("p1");
+    let input = get_input("d1");
     let parsed_input = parse_word_nums(input);
 
-    fn parse_word_nums(whole_input: &str) -> String {
-        let mut whole_input = whole_input.to_owned();
+    fn parse_word_nums(whole_input: String) -> String {
+        let mut whole_input = whole_input;
         for pair in REPLACEMENT_PAIRS {
             whole_input = whole_input.replace(pair.0, pair.1);
         }

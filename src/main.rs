@@ -4,6 +4,6 @@ mod problems;
 
 fn main() {
     let before = Instant::now();
-    problems::p3::run();
+    problems::d3::run2();
     println!("Time: {}ms", before.elapsed().as_millis());
 }
