@@ -1,4 +1,4 @@
-#![allow(dead_code, unused_imports)]
+#![allow(dead_code, unused_imports, clippy::single_char_pattern)]
 use super::get_input;
 
 const RED_CUBE_COUNT: i32 = 12;

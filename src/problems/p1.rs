@@ -1,7 +1,6 @@
 #![allow(dead_code, unused_imports)]
+use super::get_input;
 use std::collections::HashMap;
-
-use crate::problems::get_input;
 
 const P1_TEST: &str = "two1nine
 eightwothree
